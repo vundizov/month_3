@@ -52,3 +52,34 @@
 .inner_move_block {
     margin-top: 50px;
 }
+
+/* STOP WATCH */
+
+.time {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid orange;
+    margin-top: 40px;
+}
+
+.time_block {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.stopwatch {
+    padding: 100px 0;
+    background: black;
+}
+
+.time_buttons {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
