@@ -46,7 +46,6 @@
             </div>
         </div>
     </div>
-
     <div class="tab_slider">
         <div class="container">
             <h3>tab slider</h3>
@@ -83,7 +82,16 @@
             </div>
         </div>
     </div>
-
+    <div class="card_switcher">
+        <div class="container">
+            <h3>Card Switcher</h3>
+            <div class="inner_card_switcher">
+                <button class="btn" id="btn-prev">prev</button>
+                <div class="card"></div>
+                <button class="btn" id="btn-next">next</button>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <a href="https://www.instagram.com/nurdinbuy/" target="_blank">
@@ -95,6 +103,21 @@
     </div>
 </div>
 
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal_input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal_input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
 </body>
 <script src="../js/lesson.js"></script>
+<script src="../js/modal.js"></script>
 </html>

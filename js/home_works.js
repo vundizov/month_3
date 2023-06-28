@@ -42,7 +42,7 @@ let mlSeconds = 0
 const startTimer = () => {
     mlSeconds++
     mlSeconds <= 99 && (mlSecondsBlock.innerHTML = mlSeconds)
-    mlSeconds == 100 && (mlSecondsBlock.innerHTML = '00')
+    mlSeconds === 100 && (mlSecondsBlock.innerHTML = '00')
 
     mlSecondsBlock.innerHTML = `0${mlSeconds}`
     mlSeconds > 9 && (mlSecondsBlock.innerHTML = mlSeconds)
