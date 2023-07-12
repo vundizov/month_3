@@ -16,7 +16,7 @@ const closeModal = () => {
 
 modalTrigger.onclick = () => openModal()
 closeModalButton.onclick = () => closeModal()
-// setTimeout(openModal, 10000)
+setTimeout(openModal, 10000)
 modal.onclick = (event) => {
     event.stopPropagation()
     event.target === modal && closeModal()
@@ -36,8 +36,8 @@ window.addEventListener('scroll', scrollHandler);
 
 const form = document.querySelector('form')
 
-const postData = (url, data) => {
-    const response = fetch(url, {
+const postData = async (url, data) => {
+    const response = await fetch(url, {
         method: 'POST',
         headers: {'Content-type': 'application/json'},
         body: data
