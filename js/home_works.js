@@ -13,14 +13,53 @@ gmailButton.onclick = ()=> {
     }
 }
 
+const blockChild = document.querySelector('.child_block');
+let moveRight = 0;
+let moveBottom = 0;
+let moveLeft = 0;
+let moveTop = 0;
 
-let move = 0
 function moveBlock() {
-    const blockChild = document.querySelector('.child_block')
-    blockChild.style.left = `${move}px`
-    move++
-    if (move <= 450){
-        setTimeout(moveBlock,20)
+    if (moveRight < 448) {
+        blockChild.style.left = `${moveRight}px`;
+        moveRight++;
+    } else if (moveRight >= 448 && moveBottom < 448) {
+        blockChild.style.top = `${moveBottom}px`;
+        moveBottom++;
+    } else if (moveBottom >= 448 && moveLeft < 448) {
+        blockChild.style.left = `${448 - moveLeft}px`;
+        moveLeft++;
+    } else if (moveLeft >= 448 && moveTop < 448) {
+        blockChild.style.top = `${448 - moveTop}px`;
+        moveTop++;
+    }else if (moveTop >= 448 && moveRight < 448){
+        blockChild.style.left = `${moveRight}px`;
+        moveRight++;
+    }
+
+    setTimeout(moveBlock, 1);
+}
+
+moveBlock();
+
+
+
+const start = document.querySelector('#start')
+const stop = document.querySelector('#stop')
+const seconds = document.querySelector('#secondsS')
+
+let second = 0
+
+start.addEventListener('click', buttonStart)
+
+function buttonStart() {
+    stop.addEventListener('click',stopButton)
+
+    let stopInterval= setInterval(()=> {
+        second++
+        seconds.innerHTML = second
+    }, 1000)
+    function stopButton() {
+        clearInterval(stopInterval)
     }
 }
-moveBlock()
