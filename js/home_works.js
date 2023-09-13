@@ -37,29 +37,39 @@ function moveBlock() {
         moveRight++;
     }
 
-    setTimeout(moveBlock, 1);
+    setTimeout(moveBlock, 20);
 }
+moveBlock()
 
-moveBlock();
+const start = document.querySelector('#start');
+const stop = document.querySelector('#stop');
+const reset = document.querySelector('#reset');
+const seconds = document.querySelector('#secondsS');
 
+let second = 0;
+let intervalStop = null;
 
-
-const start = document.querySelector('#start')
-const stop = document.querySelector('#stop')
-const seconds = document.querySelector('#secondsS')
-
-let second = 0
-
-start.addEventListener('click', buttonStart)
+start.addEventListener('click', buttonStart);
 
 function buttonStart() {
-    stop.addEventListener('click',stopButton)
-
-    let stopInterval= setInterval(()=> {
-        second++
-        seconds.innerHTML = second
-    }, 1000)
-    function stopButton() {
-        clearInterval(stopInterval)
+    if (intervalStop === null) {
+        intervalStop = setInterval(() => {
+            second++;
+            seconds.innerHTML = second;
+        }, 1000);
     }
 }
+
+stop.addEventListener('click', stopButton);
+
+function stopButton() {
+    clearInterval(intervalStop);
+    intervalStop = null;
+}
+
+reset.addEventListener('click', () => {
+    clearInterval(intervalStop);
+    intervalStop = null;
+    second = 0;
+    seconds.innerHTML = second;
+});
