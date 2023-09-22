@@ -20,12 +20,13 @@ modalTrigger.onclick = () => openModel()
 modalCloseButton.onclick = () => closeModel()
 
 const position = () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight ){
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight ){
       openModel()
       window.removeEventListener('scroll', position)
   }
 }
 window.addEventListener('scroll', position)
 
+// setTimeout(()=> openModel(), 10000)
 
-setTimeout(()=> openModel(), 10000)
+//POST DATA

@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44744dd1-712d-44c9-828d-6c0344fb4e10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/converter.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lesson.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/lessons.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lessons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +50,16 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project_Rustam_29-03/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,6 +80,16 @@
       <workItem from="1694599698682" duration="5773000" />
       <workItem from="1694700949700" duration="3175000" />
       <workItem from="1694786693545" duration="3968000" />
+      <workItem from="1694801059463" duration="564000" />
+      <workItem from="1694845310732" duration="44000" />
+      <workItem from="1694848944093" duration="421000" />
+      <workItem from="1694850317064" duration="1779000" />
+      <workItem from="1694854722341" duration="8000" />
+      <workItem from="1694858298687" duration="1493000" />
+      <workItem from="1695204350900" duration="7387000" />
+      <workItem from="1695389235178" duration="321000" />
+      <workItem from="1695389646956" duration="1887000" />
+      <workItem from="1695391568490" duration="3515000" />
     </task>
     <servers />
   </component>
