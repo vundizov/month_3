@@ -1,0 +1,41 @@
+.wrapper {
+    background-color: black;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.person-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    width: 250px;
+    display: flex;
+    justify-content: end;
+}
+
+.person-card h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: red;
+    padding-top: 20px;
+    text-align: center;
+}
+.person-card p {
+    color: #1ae907;
+    padding-top: 15px;
+    text-align: center;
+}
+img {
+    height: 150px;
+    width: 170px;
+    display: flex;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -68,6 +68,7 @@ const converter = (element,target,target2,isCurrency)=> {
         request.setRequestHeader("Contend-type","application/json")
         request.send()
 
+
         request.onload = ()=> {
             const response = JSON.parse(request.response)
             if (isCurrency === 'som'){
@@ -112,16 +113,19 @@ let count = 1
 //
 //         })
 // }
-const switcher = () => {
-    fetch(`https://jsonplaceholder.typicode.com/todos/${count}`)
-        .then(response => response.json())
-        .then(data => {
-                card.innerHTML = `
+const switcher = async () => {
+    try {
+        const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${count}`)
+        const data = await response.json()
+        card.innerHTML = `
                 <p>${data.title}</p>
                 <p style="color:${data.completed ? 'green' : 'red'}">${data.completed}</p>
                 <span>${data.id}</span>
                 `
-         })
+    } catch (e){
+        console.log(e)
+    }
+
 }
 switcher()
 
@@ -143,13 +147,34 @@ switcher()
     }
 btnNext.onclick = next
 btnPrev.onclick = prev
-fetch(`https://jsonplaceholder.typicode.com/posts`)
-    .then(response => response.json())
-    .then((data)=> {
-        console.log(data)
-    })
+const fetchConsole = async () => {
+  const response = await fetch(`https://jsonplaceholder.typicode.com/posts`)
+    const data = response.json()
+    console.log(data)
+}
+fetchConsole()
+//WEATHER
+const cityName = document.querySelector('.cityName')
+const city = document.querySelector('.city')
+const temp = document.querySelector('.temp')
 
+//API HELPERS
 
+const DEFAULT_URL = `http://api.openweathermap.org/data/2.5/weather`
+const API_KEY = `e417df62e04d3b1b111abeab19cea714`
 
+// optional chaining - ?
 
+cityName.oninput = async (event)=> {
+    try {
+        const response = await fetch(`${DEFAULT_URL}?q=${event.target.value}&appid=${API_KEY}`)
+        const data = await response.json()
 
+        city.innerHTML = data?.name ? data?.name : 'город не найден'
+        temp.innerHTML = data?.main?.temp ? Math.round(data?.main?.temp - 273) + '&deg;C' : '...'
+    }
+    catch (error) {
+        console.log(error)
+    }
+
+}

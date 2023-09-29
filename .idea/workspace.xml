@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44744dd1-712d-44c9-828d-6c0344fb4e10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/css/cards.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cards.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/core.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/core.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/lesson.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/lesson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home_works.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home_works.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/lessons.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/lessons.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +56,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\geeks\month_3\project_Rustam_29-03\css" />
+      <recent name="C:\Users\User\Desktop\geeks\month_3\project_Rustam_29-03\js" />
+      <recent name="C:\Users\User\Desktop\geeks\month_3\project_Rustam_29-03\pages" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project_Rustam_29-03/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -90,7 +107,15 @@
       <workItem from="1695468259974" duration="1627000" />
       <workItem from="1695646826989" duration="572000" />
       <workItem from="1695653733634" duration="316000" />
-      <workItem from="1695654477796" duration="5250000" />
+      <workItem from="1695654477796" duration="5812000" />
+      <workItem from="1695808800013" duration="6360000" />
+      <workItem from="1695909973862" duration="67000" />
+      <workItem from="1695910188976" duration="932000" />
+      <workItem from="1695911280869" duration="499000" />
+      <workItem from="1695911796414" duration="1098000" />
+      <workItem from="1695987165615" duration="208000" />
+      <workItem from="1695990833849" duration="5991000" />
+      <workItem from="1696003499716" duration="576000" />
     </task>
     <servers />
   </component>
